@@ -7,7 +7,7 @@ def generate_personalized_content(user_profile, uploaded_text):
     prompt = f"""
     The user is a {user_profile['year']} year university student majoring in {user_profile['major']}.
     They prefer learning through {user_profile['preferred_method']} and have a {user_profile['learning_speed']} learning speed.
-    Explain the following content in a way that suits their {user_profile['learning_style']} learning style:
+    Explain the following content in a way as personalised teaching assistant that suits their {user_profile['learning_style']} learning style:
     
     {uploaded_text}
     """
