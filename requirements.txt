@@ -1,0 +1,8 @@
+tensorflow
+torch
+transformers
+stable-baselines3
+gym
+numpy
+pandas
+scikit-learn
