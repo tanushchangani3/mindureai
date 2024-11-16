@@ -3,7 +3,6 @@ import openai
 openai.api_key = 'XX'
 
 def generate_personalized_content(user_profile, uploaded_text):
-    # Create a prompt based on user profile
     prompt = f"""
     The user is a {user_profile['year']} year university student majoring in {user_profile['major']}.
     They prefer learning through {user_profile['preferred_method']} and have a {user_profile['learning_speed']} learning speed.
@@ -22,7 +21,6 @@ def generate_personalized_content(user_profile, uploaded_text):
     )
     return response.choices[0].text.strip()
 
-# Example user profile
 user_profile = {
     'year': 'second',
     'major': 'Computer Science',
@@ -31,11 +29,9 @@ user_profile = {
     'preferred_method': 'videos'
 }
 
-# Example uploaded text
 uploaded_text = """
 Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles.
 """
 
-# Generate personalized content
 personalized_content = generate_personalized_content(user_profile, uploaded_text)
 print(personalized_content)
