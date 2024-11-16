@@ -1,1 +1,1 @@
-# mindureai
+# AI-Driven Personalized Learning Assistant
